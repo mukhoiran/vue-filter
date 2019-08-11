@@ -8,9 +8,14 @@
     <div id="app">
 
       <!-- =========== Text filter =========== -->
-      Normal : <b> {{message}} </b>
+      <!-- Normal : <b> {{message}} </b>
       <br> All uppercase letter : <b>{{message | big}}</b>
-      <br> All lowercase letter : <b>{{message | small}}</b>
+      <br> All lowercase letter : <b>{{message | small}}</b> -->
+
+      <!-- =========== Flip word filter =========== -->
+      Normal : <b> {{message}} </b>
+      <br> All uppercase letter : <b>{{message | reverse}}</b>
+      <br> All lowercase letter : <b>{{message | reverse2}}</b>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>

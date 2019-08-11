@@ -19,21 +19,31 @@ var app = new Vue({
   // }
 
   // <!-- =========== Flip word filter =========== -->
+  // data: {
+  //   message: 'Filter on VueJS'
+  // },
+  // filters:{
+  //   reverse(value){
+  //     if(!value) return ''
+  //     value = value.toString()
+  //     return value.split('').reverse().join('')
+  //   },
+  //   reverse2(value){
+  //     if(!value) return ''
+  //     value = value.toString()
+  //     return value.split(' ').reverse().join(' ')
+  //   }
+  // }
+
+  // <!-- =========== Cpitalize filter =========== -->
   data: {
-    message: 'Filter on VueJS'
+    message: 'filter on VueJS'
   },
   filters:{
-    reverse(value){
+    capitalize(value){
       if(!value) return ''
       value = value.toString()
-      return value.split('').reverse().join('')
-    },
-    reverse2(value){
-      if(!value) return ''
-      value = value.toString()
-      return value.split(' ').reverse().join(' ')
+      return value.charAt(0).toUpperCase() + value.slice(1)
     }
   }
-
-
 })
